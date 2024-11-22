@@ -4,37 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc955c0c-78ca-4f98-bbf8-781a6df44b51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject11.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/example1/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/manage.py" afterDir="false" />
+    <list default="true" id="bc955c0c-78ca-4f98-bbf8-781a6df44b51" name="Changes" comment="module_18_1">
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task2/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/class_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;allabergenovvyacheslav&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/allabergenovvyacheslav/Module_18_Django&quot;,
+    &quot;accountId&quot;: &quot;f48d88a6-ab8e-4c06-9b18-c78c3ca5e065&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -46,14 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\WED\PycharmProjects\pythonProject11\UrbanDjango\task2" />
+      <recent name="C:\Users\WED\PycharmProjects\pythonProject11\UrbanDjango" />
+      <recent name="C:\Users\WED\PycharmProjects\pythonProject11" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject11" />
@@ -94,9 +116,20 @@
       <option name="presentableId" value="Default" />
       <updated>1732001789686</updated>
     </task>
+    <task id="LOCAL-00001" summary="module_18_1">
+      <option name="closed" value="true" />
+      <created>1732003844760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732003844760</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="module_18_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="module_18_1" />
   </component>
 </project>
