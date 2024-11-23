@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Title }}</title>
+</head>
+<body>
+    <pagename>
+        {% block pagename %}
+        <h1>{{ title }}</h1>
+        {% endblock %}
+    </pagename>
+
+    <menu>
+        {% block menu %}
+        <h3>
+        <p>
+            <a href="http://127.0.0.1:8000">Home page</a>
+        </p>
+        <p>
+            <a href="http://127.0.0.1:8000/products/">Company product</a>
+        </p>
+        <p>
+            <a href="http://127.0.0.1:8000/cart/">Your choice of products</a>
+        </p>
+        </h3>
+        {% endblock %}
+    </menu>
+
+    <content>
+        {% block content %}
+        <h2>
+            <i>
+                <u>
+                    <b>{{ title }}</b>
+                </u>
+            </i>
+        </h2>
+        <h3>
+            {% for i in production %}
+            <ul>
+                <li>{{ i }} <button>{{ text_buy }}</button></li>
+            </ul>
+            {% endfor %}
+        </h3>
+        {% endblock %}
+    </content>
+</body>
+</html>

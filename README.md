@@ -1,3 +1,5 @@
+# VCS/Import into Version Control/Share project on Github. Это создаст новый репозиторий в гитхабе
+
 Module_18_2
 Домашнее задание по теме "Urls и Views. Функциональное и классовое представление."
 Цель: закрепить знания о маршрутах (urls) и представлениях (views) в Django.
