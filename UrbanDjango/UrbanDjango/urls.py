@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('class/', ClassTemplate.as_view()),
     path('func/', func_template),
-    path('platform/', platform),
+    path('', platform),
     path('products/', products),
     path('cart/', cart),
 ]
