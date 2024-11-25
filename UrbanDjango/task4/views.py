@@ -14,28 +14,28 @@ def platform(request):
 
 
 def products(request):
-    title = 'Company products'
-    production = ['Parquet flooring',
-                  'Solid wood board',
-                  'large format parquet']
+    text_prod = 'Company products'
+    production = ['Parquet flooring 70mm',
+                  'Solid wood board 120mm',
+                  'large format parquet 90mm']
     text_buy = 'Choose'
     text_back = 'Go back'
     context = {
-        'title': title,
+        'text_prod': text_prod,
         'production': production,
         'text_buy': text_buy,
-        'text_back': text_back
+        'text_back': text_back,
     }
     return render(request, 'products.html', context)
 
 
 def cart(request):
-    title = 'Your choice of products:'
+    text_cart = 'Your choice of products:'
     your_choice = 'Sorry, your cart is empty'
     text_back = 'Go back'
     context = {
-        "title": title,
+        "text_cart": text_cart,
         'your_choice': your_choice,
-        'text_back': text_back
+        'text_back': text_back,
     }
     return render(request, 'cart.html', context)

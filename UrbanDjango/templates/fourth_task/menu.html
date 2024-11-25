@@ -1,49 +1,48 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ Title }}</title>
+    <title>{% block title %}My site{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
 </head>
 <body>
-    <pagename>
-        {% block pagename %}
+
+    <header>
+        {% block header %}
         <h1>{{ title }}</h1>
         {% endblock %}
-    </pagename>
+    </header>
 
     <menu>
         {% block menu %}
-        <h3>
-        <p>
-            <a href="http://127.0.0.1:8000">Home page</a>
-        </p>
-        <p>
-            <a href="http://127.0.0.1:8000/products/">Company product</a>
-        </p>
-        <p>
-            <a href="http://127.0.0.1:8000/cart/">Your choice of products</a>
-        </p>
-        </h3>
+            <ul>
+                <li><a href="http://127.0.0.1:8000">{{ text }}</a></li>
+                <li><a href="http://127.0.0.1:8000/products/">{{ text_prod }}</a></li>
+                <li><a href="http://127.0.0.1:8000/cart/">{{ text_cart }}</a></li>
+            </ul>
         {% endblock %}
     </menu>
 
     <content>
         {% block content %}
-        <h2>
-            <i>
-                <u>
-                    <b>{{ title }}</b>
-                </u>
-            </i>
-        </h2>
-        <h3>
-            {% for i in production %}
-            <ul>
-                <li>{{ i }} <button>{{ text_buy }}</button></li>
-            </ul>
+        <ul>
+            {% for product in production %}
+            <li>
+                <p>
+                    {{ product | title }}
+                    <button>{{ text_buy }}</button>
+                </p>
+            </li>
             {% endfor %}
-        </h3>
+        </ul>
         {% endblock %}
     </content>
+
+    <footer>
+        {% block footer %}
+        <p>&copy;2024 My site</p>
+        {% endblock %}
+    </footer>
 </body>
 </html>
