@@ -1,13 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Registration page{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
 </head>
 <body>
     <h2>User form</h2>
     <form method="post">
         {% csrf_token %}
+<!--        {{ form }}-->
         <p><label for="username">Введите логин:</label><br>
         <input type="text" id="username" name="username" maxlength="30" required></p>
 

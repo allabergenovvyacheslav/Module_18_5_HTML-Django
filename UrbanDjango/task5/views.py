@@ -1,16 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 from .forms import UserRegister
 
 
 # Create your views here.
 
+
+
+def registration_page(request):
+    return render(request, 'registration_page.html')
+
 # Пробный код регистрации
 
-# def registration_page(request):
-#     return render(request, 'registration_page.html')
-#
-#
 # def postuser(request):
 #     username = request.POST.get('username')
 #     password = request.POST.get('password')
@@ -54,12 +56,11 @@ def sign_up_by_django(request):
     if request.method == 'POST':
         form = UserRegister(request.POST)
         if form.is_valid():
-            username = request.POST.get('username')
-            password = request.POST.get('password')
-            repeat_password = request.POST.get('repeat_password')
-            age = request.POST.get('age', 1)
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            repeat_password = form.cleaned_data['repeat_password']
+            age = form.cleaned_data['age']
             context = {'info': info, 'form': form}
-
             if username not in users and password == repeat_password and int(age) > 18:
                 return HttpResponse(f'Приветствую, {username}!')
             elif username in users:
@@ -72,6 +73,6 @@ def sign_up_by_django(request):
                 info['error'] = 'Вы должны быть старше 18'
                 return render(request, 'registration_page.html', context)
 
-        else:
-            form = UserRegister()
-        return render(request, 'registration_page.html', {'form': form})
+    else:
+        form = UserRegister()
+    return render(request, 'registration_page.html', {'form': form})
