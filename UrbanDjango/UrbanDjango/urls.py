@@ -33,6 +33,9 @@ urlpatterns = [
     # path("postuser/", views.postuser),
     # path("", views.sign_up_by_html),
     # path("django_sign_up/", views.sign_up_by_django),
-    path('', views.product_list, name='product_list'),
+    path('', views.home, name='home'),
+    path('products/', views.product_list, name='product_list'),
     path('phones/', views.phones_list, name='phones_list'),
+    path('contact/', views.contact_view, name='contact'),
+    path('feedback/', views.feedback_view, name='feedback_form'),
 ]

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h2>Лучший, потому что свой</h2>
+    <h3>
+        Категории товаров
+    </h3>
+        <ul>
+            {% for category in categories %}
+            <li>
+                <a href="/category/{{ category.name|urlencode }}/">{{ category.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+{% endblock %}
