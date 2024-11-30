@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     # 'task2',
     # 'task3',
     # 'task4',
-    'task5',
+    # 'task5',
+    'example1',
 ]
 
 MIDDLEWARE = [
@@ -60,11 +61,12 @@ ROOT_URLCONF = 'UrbanDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR /
+        'DIRS': [BASE_DIR / 'templates/catalog',
                  # 'templates/second_task',
                  # 'templates/third_task',
                  # 'templates/fourth_task',
-                   'templates/fifth_task'],
+                 #  'templates/fifth_task',
+                 ],
 
         'APP_DIRS': True,
         'OPTIONS': {

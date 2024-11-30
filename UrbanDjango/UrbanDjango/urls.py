@@ -19,7 +19,8 @@ from django.urls import path
 # from task2.views import *
 # from task3.views import *
 # from task4.views import platform, products, cart
-from task5 import views
+# from task5 import views
+from example1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +31,8 @@ urlpatterns = [
     # path('platform/cart/', cart),
     # path("registration_page/", views.registration_page),
     # path("postuser/", views.postuser),
-    path("", views.sign_up_by_html),
-    path("django_sign_up/", views.sign_up_by_django),
+    # path("", views.sign_up_by_html),
+    # path("django_sign_up/", views.sign_up_by_django),
+    path('', views.product_list, name='product_list'),
+    path('phones/', views.phones_list, name='phones_list'),
 ]
